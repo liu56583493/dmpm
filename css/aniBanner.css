@@ -1,0 +1,128 @@
+.banner-wrapper {
+    position: relative;
+    cursor: pointer;
+    height: 550px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.banner {
+    position: relative;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+.banner-view {
+    position: relative;
+    height: 100%;
+    z-index: 999;
+    background-repeat: no-repeat;
+}
+
+.banner-view i {
+    position: relative;
+    display: block;
+    float: left;
+    background-repeat: no-repeat;
+}
+
+.banner-btn-wrapper{
+    position: relative;
+    width: 1200px;
+    margin: 0 auto;
+}
+
+.banner-btn {
+    width: 1200px;
+    height: 0;
+    font-size: 20px;
+    z-index: 1000;
+    text-align: center;
+    margin: 0 auto;
+    margin-top: -310px;
+}
+
+.banner-btn span {
+    display: block;
+    float: left;
+    width: 60px;
+    height: 60px;
+    background: rgba(0, 0, 0, 0.3) url(../../images/common/banner_arrow_left@2x.png) no-repeat;
+    background-size: 15px 28px;
+    background-position: center;
+    text-align: center;
+    cursor: pointer;
+    transition: all .3s;
+    border-radius: 50%;
+    opacity: .6;
+    margin-left: -145px;
+}
+
+.banner-btn span:hover {
+    background-color: rgba(0, 0, 0, .6);
+    opacity: 1;
+}
+
+.banner-btn span+span {
+    float: right;
+    background: rgba(0, 0, 0, 0.3) url(../../images/common/banner_arrow_right@2x.png) no-repeat;
+    background-size: 19px 35px;
+    background-position: center;
+    margin-right: -145px;
+}
+
+@media screen and (max-width: 1630px) {
+    .banner-btn{
+        position: absolute;
+        width: 1100px;
+        left: 50px;
+    }
+    .banner-btn span {
+        margin-left: 0;
+    }
+    .banner-btn span+span {
+        margin-right: 0;
+    }
+}
+
+.banner-number {
+    position: absolute;
+    bottom: 165px;
+    width: 100%;
+    text-align: center;
+    z-index: 1000;
+}
+
+.banner-number>* {
+    display: inline-block;
+    border-radius: 50%;
+    margin: 0 8px;
+    cursor: pointer;
+    background: rgba(255, 255, 255, 0.30);
+    width: 8px;
+    height: 8px;
+    transition: all .3s;
+}
+
+.banner-number>*:hover,
+.banner-number>*.on {
+    background: rgba(255, 255, 255, 0.80);
+}
+
+.banner-progres {
+    width: 100%;
+    position: absolute;
+    bottom: 0;
+    height: 3px;
+    z-index: 1000;
+}
+
+.banner-progres i {
+    position: absolute;
+    left: 0;
+    top: 0;
+    border-radius: 3px;
+    display: block;
+    height: 100%;
+    width: 0;
+}
